@@ -1,0 +1,152 @@
+:root{
+        --primary : rgba(246, 153, 92, 1);
+        --secondary : #fafcfd;
+        --bg-primary: #ffffff;
+}
+
+*{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+}
+
+body{
+        font-family: 'monserrat', sans-serif;
+        background-color: var(--secondary);
+}
+
+.sidebar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 21rem;
+        background-color: var(--bg-primary);
+        /* transition: 0.5s; */
+        padding: 1.5rem;
+        display: flex;
+        flex-direction: column;
+}
+
+.top{
+        height: 10%;
+
+}
+
+.center{
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+}
+
+.bottom{
+        height: 20%;
+        justify-content: center;
+        align-items: center;
+}
+
+.logo{
+        display: flex;
+        justify-content: center;
+}
+
+.logo img{
+        width: 75%;
+}
+
+.logo-text{
+        align-content: center;
+}
+
+.search{
+        display: flex;
+        position: relative;
+        margin-top: 2.5rem;
+}
+
+.icons-search{
+        position: absolute;
+        width: 1.8rem;
+}
+
+.search input{
+        width: 100%;
+        padding: 0.5rem;
+        padding-left: 2.5rem;
+        /* border: 1px solid #f1f1f1; */
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        font-size: 0.8em;
+}
+
+.search input::placeholder{
+        font-weight: lighter;
+}
+
+.menu{
+        margin: 3rem 1rem;
+        /* background: yellow; */
+
+}
+
+.sidebar svg{
+        width: 2rem;
+        margin-right: 0.5rem;
+}
+
+.sub-menu svg:first-of-type{
+        display: block;
+}
+
+.sub-menu svg:last-of-type{
+        display: none;
+}   
+
+.sub-menu svg.link-active:first-of-type{
+        display: none;
+}
+
+.sub-menu svg.link-active:last-of-type{
+        display: block;
+}
+
+.sub-menu{
+        display: flex;
+        padding: 0.7rem;
+        border-radius: 0.5rem;
+        margin: 1rem 0;
+        
+}
+
+.sub-menu a{
+        margin-right: 0.5rem;
+        align-content: center;
+        color: black;
+        font-weight: lighter;
+}
+
+
+.sub-menu a.link-active, .sub-menu svg.link-active{
+        color: var(--primary);
+        font-weight: bold;
+        /* background: var(--bg-primary); */
+        
+        
+}
+
+.menu .active{
+        background-color: rgba(246, 153, 92, 0.2);
+        color: var(--primary);
+        
+}
+
+.logout{
+        margin: 0rem 1rem;
+}
+
+.footer{
+        text-align: center;
+        margin: 2rem;
+}
