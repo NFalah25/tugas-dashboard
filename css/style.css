@@ -158,8 +158,35 @@ body{
 }
 
 .main{
-        width: 82vw;
+        width: 78vw;
         position: relative;
         background: gray;
-        margin-left: 18vw;
+        margin : 0 20vw;
+}
+
+.row{
+        display: flex;
+        justify-content: space-between;
+        margin: 1rem 0;
+}
+
+.me{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0;
+
+}
+
+.profile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem 0;
+}
+
+.profile img{
+        width: 3rem;
+        border-radius: 9999px;
+
 }
