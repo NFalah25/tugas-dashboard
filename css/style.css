@@ -12,7 +12,7 @@
 }
 
 body{
-        font-family: 'monserrat', sans-serif;
+        font-family: 'montserrat', sans-serif;
         background-color: var(--secondary);
 }
 
@@ -21,7 +21,7 @@ body{
         top: 0;
         left: 0;
         height: 100vh;
-        width: 21rem;
+        width: 18vw;
         background-color: var(--bg-primary);
         /* transition: 0.5s; */
         padding: 1.5rem;
@@ -41,7 +41,7 @@ body{
 }
 
 .bottom{
-        height: 20%;
+        height: 15%;
         justify-content: center;
         align-items: center;
 }
@@ -49,6 +49,7 @@ body{
 .logo{
         display: flex;
         justify-content: center;
+        align-items: center;
 }
 
 .logo img{
@@ -81,9 +82,6 @@ body{
         font-size: 0.8em;
 }
 
-.search input::placeholder{
-        font-weight: lighter;
-}
 
 .menu{
         margin: 3rem 1rem;
@@ -117,14 +115,13 @@ body{
         padding: 0.7rem;
         border-radius: 0.5rem;
         margin: 1rem 0;
+        align-items: center;
         
 }
 
 .sub-menu a{
-        margin-right: 0.5rem;
-        align-content: center;
+        align-items: center;
         color: black;
-        font-weight: lighter;
 }
 
 
@@ -148,5 +145,21 @@ body{
 
 .footer{
         text-align: center;
-        margin: 2rem;
+        margin: 1rem 0rem;
+}
+
+.footer span{
+        font-weight: bold;
+        margin: 1rem 0rem;
+}
+
+.footer p{
+        margin-top: 0.5rem;
+}
+
+.main{
+        width: 82vw;
+        position: relative;
+        background: gray;
+        margin-left: 18vw;
 }
