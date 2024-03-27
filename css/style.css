@@ -343,7 +343,7 @@ body{
         display: flex;
 }
 
-.lesson .image-lesson {
+.image-lesson {
         background: #EBEDF0;
         border-radius: 9999px;
         padding: 1rem   ;
@@ -354,7 +354,7 @@ body{
 
 .lesson .image-lesson img{
         /* margin: auto; */
-        width: 1.5rem;
+        width: 1.4rem;
         height: 1.5rem;
 }
 
@@ -370,15 +370,15 @@ body{
 
 .progres-bar{
         background: #EBEDF0;
-        height: 12px;
+        height: 0.6rem;
         width: 100%;
-        margin-top: 1rem;
+        margin-top: 2rem;
         border-radius: 9999px;
 }
 
 .progres-bar-fill{
         background: #83E57A;
-        height: 12px;
+        height: 0.6rem;
         width: 50%;
         border-radius: 9999px;
 }
@@ -386,8 +386,85 @@ body{
 
 
 @media(max-width: 1080px){
-
+        
         *{
                 font-size : 90%;
         }
+}
+
+@media (max-width: 567px) {
+        *{
+                font-size : 62.5%;
+        }
+        
+        .profile img{
+                height: 2rem;
+                width: auto;
+                border-radius: 9999px; 
+        }
+        
+        .notification svg{
+                width: 15px;
+        }
+
+.notification .notif{
+        width: 4px;
+        height: 4px;
+        margin-left: 0.8rem;
+}
+
+.title h2{
+        font-size: 7em;
+}
+
+        .sidebar{
+                position: absolute;
+                display: none;
+                z-index: 1;
+                width: 100vw;
+                
+
+        }
+
+        .content{
+                /* width: 100vw; */
+                width: 100vw;
+                margin: 0;
+        }
+
+        .progres{
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: start;
+                gap: 1rem;
+                text-align: start;
+                place-items: start;
+        }
+
+        .card-progres{
+                margin: 0rem 2rem;
+        }
+
+        .main{
+                grid-template-columns: repeat(1, 1fr);
+        }
+
+        .lesson .image-lesson img{
+                /* margin: auto; */
+                width: 0.8rem;
+                height: 0.8rem;
+        }
+
+        .image-lesson {
+                background: #EBEDF0;
+                border-radius: 9999px;
+                padding: 0.8rem   ;
+                width: auto;
+                text-align: center;
+        }
+
+        .progres-bar{
+                margin-top: 1rem;
+        }
+
+
 }
